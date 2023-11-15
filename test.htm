@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open URL and Download Files</title>
+</head>
+<body>
+    <button onclick="openUrlAndDownloadFile('https://dl3.fm6x.sbs/Movies/08/The.Last.Voyage.of.the.Demeter.2023/The.Last.Voyage.of.the.Demeter.2023.720p.WEBRip.800MB.x264-GalaxyRG.mkv')">Download 720p</button>
+    <button onclick="openUrlAndDownloadFile('https://dl3.fm6x.sbs/Movies/08/The.Last.Voyage.of.the.Demeter.2023/The.Last.Voyage.of.the.Demeter.2023.1080p.WEBRip.1400MB.DD5.1.x264-GalaxyRG.mkv')">Download 1080p</button>
+    <button onclick="openUrlAndDownloadFile('https://dl3.fm6x.sbs/Movies/08/The.Last.Voyage.of.the.Demeter.2023/The.Last.Voyage.of.the.Demeter.2023.480p.WEBRip.600MB.x264-GalaxyRG.mkv')">Download 480p</button>
+
+    <script>
+        function openUrlAndDownloadFile(fileUrl) {
+            var url = "https://artonehd.blogspot.com/p/the-last-voyage-of-demeter-2023.html";
+            
+            // Open the URL in a new tab
+            var newTab = window.open(url, '_blank');
+            newTab.focus();
+
+            // Trigger the file download
+            var link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = fileUrl.split('/').pop(); // Extract filename from URL
+            link.click();
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+    <div id="video-container">
+        <video controls autoplay muted>
+            <source src="https://stream.crichd.vip/update/star.php" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        // Prevent the default behavior when clicking on the video player
+        const videoContainer = document.getElementById('video-container');
+        videoContainer.addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

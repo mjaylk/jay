@@ -1,0 +1,12 @@
+.about-mobile .container .image-container {
+    display: flex;
+    width: auto;
+    margin-top: 50px;
+}
+
+.about-mobile .container .image-container img {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
